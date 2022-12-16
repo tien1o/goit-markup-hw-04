@@ -162,6 +162,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 192px 0;
+  margin: 0 auto;
 }
 
 .main-text {
@@ -194,9 +195,11 @@ nav {
 }
 
 .text-block-svgs {
-  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   margin-bottom: 8px;
-  text-align: center;
   background-color: var(--cloud);
   border-radius: 4px;
 }
@@ -280,8 +283,7 @@ nav {
 }
 
 .team-text-block {
-  padding: 32px;
-  padding-bottom: 0;
+  padding: 32px 0;
 }
 
 .team-text-h {
@@ -317,16 +319,16 @@ nav {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin: 0 auto;
-  padding-bottom: 32px;
 }
 
 .teams-btn {
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: var(--iris);
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .teams-btn:hover {
@@ -337,7 +339,7 @@ nav {
 .icon-teams {
   width: 16px;
   height: 16px;
-  color: var(--cloud);
+  fill: currentColor;
 }
 
 .customers {
@@ -360,20 +362,43 @@ nav {
   display: flex;
   gap: 24px;
 }
+.customers-link {
+  color: #8e8f99;
+}
 
+.customers-link:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4d5ae5;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--iris);
+  border-radius: 4px;
+}
 .customers-border {
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: #8e8f99;
+}
+
+.customers-link:focus {
+  color: #4d5ae5;
+}
+
+.customers-border:focus {
+  color: #4d5ae5;
 }
 
 .customers-svg {
-  display: flex;
-  margin: 0 auto;
   width: 104px;
   height: 56px;
+  fill: currentColor;
 }
 
 .section-footer {
@@ -386,8 +411,6 @@ nav {
 }
 
 .footer-block {
-  padding-top: 100px;
-  padding-bottom: 100px;
   width: 264px;
 }
 
@@ -414,8 +437,6 @@ nav {
 
 .media-links {
   display: block;
-  padding-top: 100px;
-  padding-bottom: 100px;
   margin-left: 120px;
   gap: 40px;
 }
@@ -445,6 +466,10 @@ nav {
 }
 
 .footer-btn:hover {
+  background-color: var(--icon-hover);
+}
+
+.footer-btn:focus {
   background-color: var(--icon-hover);
 }
 
